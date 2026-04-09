@@ -1,0 +1,19 @@
+<h1>Lista de Dados</h1>
+<div class="teste_containers">
+    <a href="/">Adicionar</a>
+
+    {{#each teste}}
+        <div>
+            #{{this.id}} -
+            <span class="bold">{{this.nome}} {{this.email}}</span>
+
+            <!-- comando para editar -->
+            <a href="/teste/edit/{{this.id}}">Editar</a>
+
+            <!-- comando para deletar -->
+            <form action="/teste/remove/{{this.id}}" method="POST" style="display:inline;">
+                <button type="submit">Excluir</button>
+            </form>
+        </div>
+    {{/each}}
+</div>

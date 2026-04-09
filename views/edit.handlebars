@@ -1,0 +1,17 @@
+<h1>Editar Cliente</h1>
+
+<form action="/teste/update" method="POST">
+    <input type="hidden" name="id" value="{{teste.id}}">
+
+    <label>Nome:</label>
+    <input type="text" name="nome" value="{{teste.nome}}">
+
+    <br><br>
+
+    <label>Email:</label>
+    <input type="text" name="email" value="{{teste.email}}">
+
+    <br><br>
+
+    <button type="submit">Atualizar</button>
+</form>
